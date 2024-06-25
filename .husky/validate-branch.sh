@@ -27,7 +27,7 @@ SERVICE=$(read_file_content "$PWD/.husky/metadata/service.txt")
 ISSUE_CODE=$(read_file_content "$PWD/.husky/metadata/issue_code.txt")
 
 # Define the regex for a valid branch name
-valid_branch_regex="^(($TYPE)\(($SERVICE)\)/($ISSUE_CODE(-)[0-9]+(-)|no_issue(-))[a-zA-Z0-9\-]+)$"
+valid_branch_regex="^(($TYPE)\(($SERVICE)\)\/($ISSUE_CODE(-)[0-9]+(-)|no_issue(-))[a-zA-Z0-9\-]+)$"
 
 # Error message for invalid branch name
 message="❌ Branch name invalid, regex: $valid_branch_regex"
