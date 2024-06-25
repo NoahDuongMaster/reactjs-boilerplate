@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@ant-design/cssinjs": "1.21.0",
-    "@million/lint": "1.0.0-rc.26",
     "@solana/wallet-adapter-base": "0.9.23",
     "@solana/wallet-adapter-react": "0.15.35",
     "@solana/wallet-adapter-wallets": "0.19.32",
@@ -21,6 +20,7 @@
     "@tanstack/react-router": "^1.40.0",
     "antd": "5.18.3",
     "axios": "^1.7.2",
+    "million": "3.1.11",
     "nextjs-toploader": "1.6.12",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
