@@ -24,17 +24,14 @@ COPY .env.development .env.production
 RUN npm run build
 
 # 3. Production image, copy all the files and run next
-FROM base AS runner
+FROM nginx:stable-alpine AS runner
 WORKDIR /app
 
-RUN npm i -g serve
+COPY ./docker/development/nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=builder /app/dist /var/www/html/
 
 ENV NODE_ENV=production
-
-COPY --from=builder /app/dist ./dist
-
 EXPOSE 80
-
 ENV PORT 80
 
-CMD HOSTNAME="0.0.0.0" serve -s dist
+CMD HOSTNAME="0.0.0.0" nginx -g "daemon off;"
