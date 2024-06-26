@@ -22,7 +22,7 @@ const request = async (
 ): Promise<AxiosResponse | null | { message: string }> => {
   const controller = new AbortController();
 
-  if (import.meta.env.NEXT_PUBLIC_AUTH_METHOD === AUTH_METHOD.HEADER) {
+  if (import.meta.env.VITE_AUTH_METHOD === AUTH_METHOD.HEADER) {
     const accessToken = localStorage.getItem(ACCESS_TOKEN_STORAGE_KEY);
     if (accessToken) {
       defaultHeaders.Authorization = `Bearer ${accessToken}`;
