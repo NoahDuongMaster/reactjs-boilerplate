@@ -1,5 +1,3 @@
-'use client';
-
 import { useState } from 'react';
 import { WalletReadyState } from '@solana/wallet-adapter-base';
 import { useWallet } from '@solana/wallet-adapter-react';

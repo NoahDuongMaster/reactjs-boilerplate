@@ -1,30 +1,172 @@
-# React + TypeScript + Vite
+<h1 align="center" id="title">ReactJS Boilerplate</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center"><img src="https://socialify.git.ci/truongdn-it/reactjs-boilerplate/image?description=1&amp;descriptionEditable=A%20super%20powerful%20NextJS%20boilerplate%20developed%20following%20the%20Feature%20driven%20pattern&amp;font=Inter&amp;forks=1&amp;issues=1&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Circuit%20Board&amp;pulls=1&amp;stargazers=1&amp;theme=Auto" alt="project-image"></p>
 
-Currently, two official plugins are available:
+<p id="description">A super powerful ReactJS boilerplate developed following the Feature driven pattern.</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔥 Core Values
 
-## Expanding the ESLint configuration
+- **_Always write clean code_**
+- **_Think before coding_**
+- **_Code has heart_**
+- **_Ready to teach each other_**
+- **_Responsibility for work_**
+- **_Actively discuss_**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<h2>🚀 Demo</h2>
 
-- Configure the top-level `parserOptions` property like this:
+[https://nextjs-core-project.vercel.app/](https://nextjs-core-project.vercel.app/)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+<h2>Project Screenshots:</h2>
+
+<img src="./public/screenshot.png" alt="project-screenshot" width="3024" />
+
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+- Clean folder structure
+- High scalability
+- Feature driven architecture
+- Multilingualism does not change routes
+- Validate ENV before build
+- Validate branch and commit before commit code
+- Support Storybook
+- Support Unit Test
+- Bla bla bla feature...
+- Analyze production error messages
+
+## 📂 Folder Structure
+
+```
+.
+├── adapters
+├── components
+│   ├── common
+│   └── features
+├── routes
+├── styles
+├── utils
+│   └── constants
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 💉 Commit Rules
+
+Must create branch follow below rules:
+
+- build
+- chore
+- ci
+- docs
+- feat
+- fix
+- perf
+- refactor
+- revert
+- style
+- test
+
+Example:
+`feat: first commit`
+
+## 🤟 Branch Rules
+
+Must create branch follow below rules:
+
+- feat/
+- feedback/
+- hotfix/
+- revert/
+- reset/
+- force/
+- refactor/
+- fix/
+
+Example:
+`git checkout -b feat/feature-a`
+
+Note: _Underscore to be not allow!!!_
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Clone the project</p>
+
+```
+git clone https://github.com/truongdn-it/reactjs-boilerplate
+```
+
+<p>2. Go to the project directory</p>
+
+```
+cd reactjs-boilerplate
+```
+
+<p>3. Install dependencies</p>
+
+```
+npm install
+```
+
+<p>4. Start the server</p>
+
+```
+npm run dev
+```
+
+## 🤖 Using Docker and Makefile
+
+### Development environment - for doing testing
+
+```
+make build-development
+make start-development
+```
+
+Open http://localhost:3001
+
+### Staging environment - for doing UAT testing
+
+```
+make build-staging
+make start-staging
+```
+
+Open http://localhost:3002
+
+### Production environment - for users
+
+```
+make build-production
+make start-production
+```
+
+Open http://your-domain:80
+
+<h2>🍰 Contribution Guidelines:</h2>
+
+[CONTRIBUTING](<[CONTRIBUTING](https://github.com/truongdn-it/reactjs-boilerplate/blob/main/CONTRIBUTING.md)>)
+
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+- ReactJS
+- Antd Design
+- React Query
+- Zustand
+- Commit lint
+- Eslint
+- Prettier
+- Storybook
+- Vitest
+- Apollo Server
+- Apollo Client
+- Sentry
+
+<h2>🛡️ License:</h2>
+
+This project is licensed under the [MIT](./LICENSE)
+
+<h2>💖Like my work?</h2>
+
+Donate me for crypto (USDT)<p>BEP20 Wallet: **0xbb861e0bd84af04cf370bcf8227537344500bd0a**</p>
